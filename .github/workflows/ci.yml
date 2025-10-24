@@ -15,12 +15,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: recursive
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true
-          submodules: recursive
       - name: Run tests
         run: bundle exec rspec
       - name: Perform type check
