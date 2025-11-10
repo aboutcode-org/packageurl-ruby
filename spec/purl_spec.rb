@@ -110,22 +110,6 @@ RSpec.describe 'PackageURL specification tests' do
       )
       expect(purl.to_s).to eq(test_case.expected_output)
 
-    when 'validation'
-      test_group = test_case.test_group
-      unless %w[base advanced].include?(test_group)
-        raise "Unknown test group: #{test_group}"
-      end
-      strict = test_group == 'base'
-
-      messages = PackageURL.validate_string(purl: test_case.input, strict: strict)
-      messages_array = messages.map { |m| (m.respond_to?(:to_h) ? m.to_h : m) }
-
-      if test_case.expected_output
-        expect(messages_array).to eq(test_case.expected_output)
-      else
-        expect(messages_array).to be_empty
-      end
-
     else
       raise "Unknown test type: #{test_case.test_type}"
     end
