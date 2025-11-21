@@ -76,7 +76,7 @@ RSpec.describe PackageURL do
                                namespace: nil,
                                name: 'ruby-advisory-db-check',
                                version: '0.12.4',
-                               qualifiers: nil,
+                               qualifiers: {},
                                subpath: nil
       }
 
@@ -89,7 +89,7 @@ RSpec.describe PackageURL do
                                namespace: 'birkenfeld',
                                name: 'pygments-main',
                                version: '244fd47e07d1014f0aed9c',
-                               qualifiers: nil,
+                               qualifiers: {},
                                subpath: nil
       }
 
@@ -102,7 +102,7 @@ RSpec.describe PackageURL do
                                namespace: 'package-url',
                                name: 'purl-spec',
                                version: '244fd47e07d1004f0aed9c',
-                               qualifiers: nil,
+                               qualifiers: {},
                                subpath: nil
       }
 
@@ -115,7 +115,7 @@ RSpec.describe PackageURL do
                                namespace: 'google.golang.org',
                                name: 'genproto',
                                version: nil,
-                               qualifiers: nil,
+                               qualifiers: {},
                                subpath: 'googleapis/api/annotations'
       }
 
@@ -128,7 +128,7 @@ RSpec.describe PackageURL do
                                namespace: 'org.apache.commons',
                                name: 'io',
                                version: '1.3.4',
-                               qualifiers: nil,
+                               qualifiers: {},
                                subpath: nil
       }
 
@@ -141,7 +141,7 @@ RSpec.describe PackageURL do
                                namespace: nil,
                                name: 'foobar',
                                version: '12.3.1',
-                               qualifiers: nil,
+                               qualifiers: {},
                                subpath: nil
       }
 
@@ -154,7 +154,7 @@ RSpec.describe PackageURL do
                                namespace: nil,
                                name: 'EnterpriseLibrary.Common',
                                version: '6.0.1304',
-                               qualifiers: nil,
+                               qualifiers: {},
                                subpath: nil
       }
 
@@ -167,7 +167,7 @@ RSpec.describe PackageURL do
                                namespace: nil,
                                name: 'django',
                                version: '1.11.1',
-                               qualifiers: nil,
+                               qualifiers: {},
                                subpath: nil
       }
 
@@ -194,7 +194,7 @@ RSpec.describe PackageURL do
                                namespace: nil,
                                name: 'name',
                                version: nil,
-                               qualifiers: nil,
+                               qualifiers: {},
                                subpath: 'path/with/%/percent'
       }
 
@@ -209,7 +209,7 @@ RSpec.describe PackageURL do
                                namespace: nil,
                                name: 'name',
                                version: nil,
-                               qualifiers: nil,
+                               qualifiers: {},
                                subpath: 'path/ space/?query/%percent'
       }
 
@@ -224,7 +224,7 @@ RSpec.describe PackageURL do
                                namespace: nil,
                                name: 'n',
                                version: nil,
-                               qualifiers: nil,
+                               qualifiers: {},
                                subpath: '%'
       }
 
@@ -241,7 +241,7 @@ RSpec.describe PackageURL do
           namespace: 'org.apache.commons',
           name: 'io',
           version: nil,
-          qualifiers: nil,
+          qualifiers: {},
           subpath: nil
         )
       end
@@ -253,7 +253,7 @@ RSpec.describe PackageURL do
           namespace: 'org.apache.commons',
           name: 'io',
           version: nil,
-          qualifiers: nil,
+          qualifiers: {},
           subpath: nil
         )
       end
@@ -265,7 +265,7 @@ RSpec.describe PackageURL do
           namespace: 'org.apache.commons',
           name: 'io',
           version: nil,
-          qualifiers: nil,
+          qualifiers: {},
           subpath: nil
         )
       end
